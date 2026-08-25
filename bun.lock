@@ -21,7 +21,7 @@
         "@rbxts/object-utils": "^1.0.4",
         "@rbxts/planck": "^1.0.0",
         "@rbxts/profile-store": "^1.0.3",
-        "@rbxts/quickzone": "^1.4.6",
+        "@rbxts/quickzone": "^1.4.7",
         "@rbxts/ripple": "^0.10.2",
         "@rbxts/services": "^1.6.0",
         "@rbxts/tether": "^1.4.21",
@@ -34,7 +34,7 @@
       "devDependencies": {
         "@biomejs/biome": "2.4.12",
         "@rbxts/compiler-types": "3.0.0-types.0",
-        "@rbxts/types": "^1.0.941",
+        "@rbxts/types": "^1.0.945",
         "roblox-ts": "3.0.0",
         "typescript": "^5.9.3",
       },
@@ -100,7 +100,7 @@
 
     "@rbxts/profile-store": ["@rbxts/profile-store@1.0.3", "", {}, "sha512-hhaBnE7iabydxMMlun9ezD1oFCfETFXp95r2hjmQUip5GrGLGugAbrzdUhEaqRpdDaM+c4qsj2JfskdAUfz/mw=="],
 
-    "@rbxts/quickzone": ["@rbxts/quickzone@1.4.6", "", {}, "sha512-5Dnpjn5kq8eY8yTGmcVYVoZOOkEmWZa4xVtO7QN4JlkhtZkMC7jCuElME0tDV7F/CJcVzI5rL1nkTHNUthgxgw=="],
+    "@rbxts/quickzone": ["@rbxts/quickzone@1.4.7", "", {}, "sha512-Z8MC5nOL5UYQGEkKnHJFeUsSHA3RxhdaKdW+hMGs8jZ/9dAh5hVFNXc891BLW5jENnk7WdZQOn0u6btKSSrMHA=="],
 
     "@rbxts/repr": ["@rbxts/repr@1.0.3", "", {}, "sha512-5CnUheadvAF97F1gDK9Vo42vthCInCLlHGOLSB5qJit72GKoPCYZqTnKEDfhqLy5Cp28cQCdhUmB2fdKTvuGtg=="],
 
@@ -118,7 +118,7 @@
 
     "@rbxts/trash": ["@rbxts/trash@1.0.10", "", { "dependencies": { "@rbxts/t": "^3.2.1" } }, "sha512-QvBdoecX7b3PQAH/qiKYp11YH559f+Nk9Cvx2/cIdopY1osWIk//2CN669LWIW5oaHLJWsNrogZIZyuxpV68Pg=="],
 
-    "@rbxts/types": ["@rbxts/types@1.0.943", "", {}, "sha512-RvTlBEbdp8cTy3YyRJhKcmH31bMG96rg4tksNHs3BWrgbNohH9yacsj9+5/7lnxZAL2usJdeDEt5oLneVrKjqg=="],
+    "@rbxts/types": ["@rbxts/types@1.0.945", "", {}, "sha512-pBEwAcFi9h1fzIHVFyVRiDAX8rWAWnSQKIrQ4KITF+lfRdPTTBpm16bu/dTO5oZkiyW6dxELe8iR1vQAqzPGow=="],
 
     "@rbxts/ui-labs": ["@rbxts/ui-labs@2.4.2", "", {}, "sha512-9cyzDYN4mM7KSupZpbHRCUWCfSHzy8LCqa9Czys2jaKYUCn8oV4j5AE+5jTrHD/8RcltP5EvCSFIFwB0N/NfxA=="],
 
