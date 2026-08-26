@@ -1,6 +1,6 @@
 import { Controller } from "@flamework/core";
 import { Player } from "client/utility/utility";
-import { AIR_SPEED_MAX, AIR_SPEED_STANDING } from "../constants/character";
+import { AIR_SPEED_MAX, AIR_SPEED_STANDING, GROUND_ACCELERATION_TIME, GROUND_DECELERATION_TIME } from "../constants/character";
 
 @Controller({})
 export class PhysicsController {
@@ -50,7 +50,16 @@ export class PhysicsController {
     return cm.ActiveController === this.getAC();
   }
 
+  public setupGroundController(): void {
+    const gc = this.getGC();
+    if (!gc) return;
+
+    gc.AccelerationTime = GROUND_ACCELERATION_TIME;
+    gc.DecelerationTime = GROUND_DECELERATION_TIME;
+  }
+
   public reset(): void {
     this.setAirSpeedFactor(AIR_SPEED_STANDING);
+    this.setupGroundController();
   }
 }

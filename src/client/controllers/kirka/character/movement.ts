@@ -1,5 +1,4 @@
 import { Controller } from "@flamework/core";
-import { OnPreAnimation } from "client/hook-managers/hooks";
 import { OnPreSimulation } from "shared/hooks";
 import { AIR_SPEED_CROUCH_PENALTY, AIR_SPEED_MAX, AIR_SPEED_STANDING, LANDING_PERFECT_WINDOW, LANDING_WINDOW } from "../constants/character";
 import { CharacterStateController } from "./character-state";
@@ -12,7 +11,7 @@ interface JumpRecord {
 }
 
 @Controller({})
-export class MovementController implements OnPreAnimation {
+export class MovementController implements OnPreSimulation {
   private airborne = false;
   private jumpStartCrouched = false;
   private releasedInAir = false;
@@ -64,8 +63,8 @@ export class MovementController implements OnPreAnimation {
     this.physics.setAirSpeedFactor(AIR_SPEED_MAX - (AIR_SPEED_MAX - AIR_SPEED_STANDING) * falloff);
   }
 
-  public onPreAnimation() {
-    if (!this.airborne) return;
+  public onPreSimulation() {
+    if (!this.airborne || this.jumpDirection.Magnitude === 0) return;
     this.physics.setMovingDirection(this.jumpDirection);
   }
 
